@@ -1,0 +1,2 @@
+!function(){"use strict";chrome.runtime.onMessage.addListener((function(e,n,t){console.log("[content.js]. Message received",e),t({headlines:Array.from(document.getElementsByTagName("h1")).map((function(e){return e.innerText})),location:Array.from(document.getElementsByClassName("text-body-small inline t-black--light break-words")).map((function(e){return e.textContent})),info:Array.from(document.getElementsByClassName("visually-hidden")).map((function(e){return e.textContent}))})}))}();
+//# sourceMappingURL=content.js.map
